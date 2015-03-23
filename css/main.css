@@ -386,6 +386,7 @@ display: block;
   margin-top: 0.75em;
   display:block;
   width: 100%;
+	font-family: Source Code Pro, sans-serif;
 }
 #modal form input[type = "submit"], form a
 {

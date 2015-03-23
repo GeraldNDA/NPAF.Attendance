@@ -1,1 +1,418 @@
+.title
+{
+	text-indent: 1rem;
+}
+.title span
+{
+	-webkit-animation: blinker 1s cubic-bezier(1,0,0,1) infinite;
+	animation: blinker 1s cubic-bezier(1,0,0,1) infinite;
+}
+@keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}
+@-webkit-keyframes blinker { 
+  from { opacity: 1.0; } to { opacity: 0.0; }
+}
+*, *:before, *:after
+{
+  box-sizing: border-box;
+}
+body
+{
+  background: black;
+	font-family:'Source Code Pro', serif;
+	color: #0f0;
+	position: relative;
+}
+ h3, h4, h5, h6, .tabLabel
+{
+	font-family:'Source Code Pro', serif;
+	font-weight: 300;
+	text-indent: 0;
+}
+h1
+{
+  font-family: 'Coda', sans-serif;
+	font-size: 3em;
+}
+h2
+{
+	font-family: 'Coda', sans-serif;
+	font-size: 2em;
+	text-indent: 0;
+}
+h3, .tabLabel
+{
+	
+	font-size: 1.5em;
+	
+}
+#body h1:first-of-type
+{
+	text-indent: 1rem;
+}
+/*CSS3 TABS*/
+.tabs {
+  font-size: 0;
+  margin: 1rem;
+}
 
+.tabs:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.tabs .tab {
+  display: inline;
+}
+.tabs .tab .tabLabel{
+  background: #616161;
+	border: none;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #0f0;
+  display: inline-block;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 1em; 
+  position: relative;
+  vertical-align: bottom;
+}
+
+.tabs .tab > [type="radio"] {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  opacity: 0;
+  position: fixed;
+  width: 1px;
+  z-index: -1;
+}
+
+.tabs .tabPanel {
+  display: inline;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  width: 0;
+}
+
+.tabs .tabContent {
+  display: block;
+  background: #212121;
+  padding: 1em;
+  border-top: 1px solid #0f0;
+  float: left;
+	font-size: 1rem;
+  margin-top: -1px;
+  width: 100%;
+	z-index: 0;
+}
+
+.tabs .tab [type="radio"]:checked + .tabLabel {
+  background: #212121;
+	box-sizing: content-box;
+	border: 1px solid transparent;
+  z-index: 1;
+}
+
+.tabs .tab [type="radio"]:checked ~ .tabPanel {
+  display: inline;
+}
+/*attendance*/
+form
+{
+	display: table;
+	text-align: center;
+	width: 100%;
+}
+form .legend
+{
+	display: table-header-group;
+}
+form .legend .head
+{
+	display: table-cell;
+	border-left: 2px solid #717171;
+	border-bottom: 2px solid #717171;
+	border-top: none;
+	font-family: "Coda", serif;
+}	
+form .legend .head:first-of-type
+{
+	border-left: none;
+	position: relative;
+	z-index: 1;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/*Tooltip*/
+form .legend .head:first-of-type:before, form .legend .head:first-of-type:after
+{
+	visibility: hidden;
+	opacity: 0;
+}
+
+form .legend .head:first-of-type:before
+{
+  position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-bottom: 5px solid #000;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.95);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+form .legend .head:first-of-type:after
+{
+	position: absolute;
+    top: 150%;
+    left: 50%;
+    margin-top: -0.5rem;
+    margin-left: -2.5rem;
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #fff;
+    content: attr(tooltip);
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+form .legend .head:first-of-type:hover:before, form .legend .head:first-of-type:hover:after, form .legend .head:first-of-type:hover
+{
+	text-decoration: none;
+	visibility: visible;
+	opacity: 1;
+}
+form .student
+{
+	display: table-row;
+}
+form .student:nth-of-type(2n)
+{
+	background: #616161;
+}
+form .student *
+{
+	display: table-cell;
+	line-height: 2em;
+	border-left: 2px solid #717171;
+}
+form .student input[type="checkbox"]
+{
+	cursor: pointer;
+}
+.tabs .tab [type="radio"]:checked ~ .tabPanel .sticker
+{
+	background: #607D8B;
+	border: none;
+	border-radius: 100%;
+	
+	height: 10vw;
+	width: 10vw;
+	margin: 0 0.25em 0.25em 0;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-size: 2.5em;
+
+}
+
+.tabs .tab [type="radio"]:checked ~ .tabPanel .sticker:active
+{
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.7);
+}
+/*Settings*/
+label[for="property"]
+{
+  text-indent: 1rem;
+}
+select
+{
+	font-family: 'Source Code Pro', serif;
+	background: #616161;
+	font-size: 1em;
+	border: none;
+	color:#0f0;
+}
+.ssetting
+{
+	display: inline-block;
+	width: 45%;
+	height: 20vh;
+	margin: 1em 2%;
+	border-radius: 1rem;
+	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
+	overflow: hidden;
+	background: #212121;
+}
+.ssetting .spoints, .ssetting .sdelete,
+{
+	display: block;	
+}
+.ssetting img
+{
+	height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+.sinfo
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: calc(95% - 20vh);
+	
+}
+.sinfo h4
+{	
+	margin: 0.75rem 0;
+	text-indent: 0.25rem;
+	font-family: "Coda", serif;
+}
+.sinfo .spoints
+{
+	display: block;
+	background: #383838;
+	width: 95%;
+	height: auto;
+	margin: 0.25em auto;
+	margin-top: 0;
+	text-indent: 1rem;
+	border-radius: 0.5rem;
+	line-height: 1.5em;
+	border: 2px solid #0f0;
+	vertical-align: middle;
+	font-family: "Source Code Pro", serif;
+	overflow: hidden;
+}
+.sinfo .spoints button
+{
+	float: right;
+}
+.spoints button
+{
+	background: #0f0;
+	color: black;
+	border: none;
+	display: inline-block;
+	padding: auto;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 1.5rem;
+	vertical-align: middle;
+	font-family: "Source Code Pro", serif;
+	cursor: pointer;
+}
+.spoints button:first-child
+{
+	border-left: 1px solid black;
+}
+.sdelete button
+{
+  color: #0f0;
+	border: 2px solid #0f0;
+	background: #383838;
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+	line-height: 1.5em;
+	border-radius: 0.5rem;
+	text-indent: 1rem;
+	padding: 0;
+	font-size: 1rem;
+	text-align: left;
+	font-family: 'Coda', serif;	
+}
+#modal
+{
+	background: #ccc;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0, 0.95);
+	z-index: 5;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100vh;
+}
+#modal form {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 5px;
+	width: initial;
+	line-height: initial;
+  background: #212121;
+  padding: 2.5em 5em;
+  box-shadow: 0.25em 0.25em 1em rgba(0,0,0,0.8);
+}
+#modal form h1
+{
+  color: #0f0;
+  font-family: Coda, sans-serif;
+}
+#modal form input:not([type="submit"])
+{
+  background: transparent;
+  border: 2px solid #0f0;
+  height: 3.5em;
+  text-indent: 5%;
+  color: #0f0;
+  margin-top: 0.75em;
+  display:block;
+  width: 100%;
+}
+#modal form input[type = "submit"], form a
+{
+  float: right;
+  margin: 0.75em 0 0 1em;
+  display: inline-block;
+  line-height: 2em;
+  height: 2em;
+  font-size: 1em;
+}
+#modal form input[type="submit"]
+{
+  background: #607D8B;
+  padding: 0 2em;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.26);
+  font-family: Coda, sans-serif;
+}
+#modal form a
+{
+  text-decoration: none;
+  color: #B6B6B6;
+  font-family: Coda, sans-serif;
+  
+}
+#modal input[type = "number"], 
+{
+ -moz-appearance: textfield;
+ -webkit-appearance: textfield;
+ appearance: textfield;
+}
+::-webkit-inner-spin-button, ::-webkit-inner-spin-button { -webkit-appearance: none;}
+::-webkit-input-placeholder {
+   font-family: Source Code Pro, monospaced;
+  color: rgba(0,255,0,0.5);
+}

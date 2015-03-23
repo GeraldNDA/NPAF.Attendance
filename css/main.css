@@ -222,7 +222,10 @@ form .student input[type="checkbox"]
 	width: 10vw;
 	margin: 0 0.25em 0.25em 0;
 	box-shadow:  1px 1px 5px rgba(0,0,0,0.7);
-	
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 10vw;
 	position: fixed;
 	bottom: 0;
 	right: 0;
@@ -338,6 +341,10 @@ select
 	text-align: left;
 	font-family: 'Coda', serif;	
 }
+#modal:target
+{
+display: block;
+}
 #modal
 {
 	background: #ccc;
@@ -351,6 +358,7 @@ select
 	vertical-align: middle;
 	text-align: center;
 	line-height: 100vh;
+	display:none;
 }
 #modal form {
   text-align: left;
@@ -398,12 +406,15 @@ select
   box-shadow: 0 2px 5px 0 rgba(255, 255, 255, 0.26);
   font-family: Coda, sans-serif;
 }
+#modal form input[type="submit"]:active
+{
+	box-shadow: 0 0 0 0 black;
+}
 #modal form a
 {
   text-decoration: none;
   color: #B6B6B6;
   font-family: Coda, sans-serif;
-  
 }
 #modal input[type = "number"], 
 {

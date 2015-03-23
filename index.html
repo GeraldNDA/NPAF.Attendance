@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8"/>
+  	<title> Computer Club Management </title>
+  	<link href='http://fonts.googleapis.com/css?family=Coda|Source+Code+Pro:400,300,200' rel='stylesheet' type='text/css'>
+  	<link href = "style.css" rel="stylesheet" type="text/css">
+		<script src = "script.js" type = "text/javascript"></script>
+		
+  </head>
+  <body>
+    <!--Tri-state checkboxes: http://codepen.io/anon/pen/gbQBNq-->
+        <h1 class = "title">> App Factory Attendance<span>_</span></h1>        
+        
+<section id = "body">
+                                        <div class = "tabs">
+                                                <div class = "tab" >
+                                                        <input type="radio" class = "tabRadio" id = "attendance" name = "tabGroup" checked/>
+                                                        <label class = "tabLabel" for = "attendance">Attendance</label>
+                                                        <div class = "tabPanel">
+                                                                <section class= "tabContent">
+                                                                        <div id="attendance">        
+                                                                        <form name = "attendance">
+                                                                                <div class = "legend">
+                                                                                        <div class = "head" tooltip = "Click once for away, click twice for excused">&#10004;</div>
+                                                                                        <div class = "head">Student Name</div>
+        
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student1" value="student1" id = "student1" checked>
+                                                                                        <label for="student1" class = "name">John Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student2" value="student2" id = "student2" checked>
+                                                                                        <label for="student2" class = "name">Jane Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student3" value="student3" id = "student3" checked>
+                                                                                        <label for="student3" class = "name">John Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student4" value="student4" id = "student4" checked>
+                                                                                        <label for="student4" class = "name">Jane Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student5" value="student5" id = "student5" checked>
+                                                                                        <label for="student5" class = "name">John Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student6" value="student6" id = "student6" checked>
+                                                                                        <label for="student6" class = "name">John Doe</label>
+                                                                                </div>
+                                                                                <div class = "student">
+                                                                                        <input type="checkbox" name="student7" value="student7" id = "student7" checked>
+                                                                                        <label for="student7" class = "name">Jane Doe</label>
+                                                                                </div>
+                                                                                <input type = "submit" value = "&#10004;" class = "sticker">
+                                                                        </form>
+                                                        </div>
+                                                                </section>
+                                                        </div>
+                                                </div>
+                                                <div class = "tab" >
+                                                        <input type="radio" class = "tabRadio" id = "settings" name = "tabGroup" />
+                                                        <label class = "tabLabel" for = "settings">Settings</label>
+                                                        <div class = "tabPanel">
+                                                                <section class= "tabContent">
+                                                        <div id="settings">
+                                                                <h2>Properties</h2>
+                                                                <label for="property">Sort attendance by</label>
+                                                                <select name="property">
+                                                                        <option value="Alphabet">Alphabet</option>
+                                                                        <option value="Attendance">Attendance</option>
+                                                                        <option value="Time"> Time Added</option>
+                                                                </select>
+                                                                <h2>Student Details</h2>
+                                                                <div class = "ssetting">
+                                                                        
+                                                                        <img src = "http://placehold.it/50x50/212121/0f0">
+                                                                        <div class = "sinfo">
+                                                                                <h4>Student Name</h4>
+                                                                                <div class = "spoints"> Points: 1 <button>+</button> <button>-</button></div>
+                                                                        <div class = "sdelete"> <button> Delete?</button></div>
+                                                                </div>
+                                                                </div>
+                                                                <div class = "ssetting">
+                                                                                <img src = "http://placehold.it/50x50/212121/0f0">
+                                                                        <div class = "sinfo">
+                                                                                <h4>Student Name</h4>
+                                                                        <div class = "spoints"> Points: 1 <button>+</button> <button>-</button></div>
+                                                                        <div class = "sdelete"> <button> Delete?</button></div>
+                                                                                </div>
+                                                                </div>
+                                                                <div class = "ssetting">
+                                                                        
+                                                                                <img src = "http://placehold.it/50x50/212121/0f0">
+                                                                        <div class = "sinfo">
+                                                                                <h4>Student Name</h4>
+                                                                        <div class = "spoints"> Points: 1 <button>+</button> <button>-</button></div>
+                                                                        <div class = "sdelete"> <button> Delete?</button></div>
+                                                                </div>
+                                                                </div>
+                                                                <div class = "ssetting">
+                                                                                <img src = "http://placehold.it/50x50/212121/0f0">
+                                                                        <div class = "sinfo">
+                                                                                <h4>Student Name</h4>
+                                                                        <div class = "spoints"> Points: 1 <button>+</button> <button>-</button></div>
+                                                                        <div class = "sdelete"> <button> Delete?</button></div>
+                                                                                </div>
+                                                                </div>
 
+                                                                <button class = "sticker">
+                                                                        &#43;
+                                                                </button>
+
+                                                        </div>
+                                                        
+                                                                </section>
+                                                        </div>
+                                                </div>
+                                        </div>
+                </section>
+    <div id = "modal">
+            <form>
+              <h1 class = "title">> Add a Club Member<span>_</span></h1>
+              <input type = "text" placeholder = "First Name" required>
+              <input type = "text" placeholder = "Last Name" required>
+              <input type ="number" max = "999999" placeholder = "Student Number">
+    
+                    <input type ="submit" value = "Add">
+                    <a href = "#"> Cancel </a>
+            </form>
+    </div>
+  </body>
+</html>

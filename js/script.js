@@ -25,4 +25,20 @@ window.onload = function(){
 					};
 				};
     };
+		document.onkeydown = function(e){
+			var pressedKeyValue = e.keyCode;
+			if(pressedKeyValue == 27 && location.hash == "#modal")
+			{
+				location.hash = "";
+			}
+		
+		};
+		document.getElementById("modal").onmousedown = function()
+		{
+			location.hash = "";
+		};
+		document.forms.modal.onmousedown = function(e)
+		{
+			e.stopPropagation();
+		};
 };

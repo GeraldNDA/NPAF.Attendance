@@ -417,7 +417,7 @@ display: block;
   color: #B6B6B6;
   font-family: Coda, sans-serif;
 }
-#modal input[type = "number"], 
+#modal input[type = "number"]
 {
  -moz-appearance: textfield;
  -webkit-appearance: textfield;

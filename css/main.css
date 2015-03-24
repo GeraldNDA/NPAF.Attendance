@@ -339,7 +339,7 @@ select
 	padding: 0;
 	font-size: 1rem;
 	text-align: left;
-	font-family: 'Coda', serif;	
+	font-family: 'Source Code Pro', serif;	
 }
 #modal:target
 {

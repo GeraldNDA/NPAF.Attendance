@@ -5,7 +5,7 @@ window.onload = function(){
       attendance[i].dataset["checked"] = 0;
 			attendance[i].onclick = function(){
         switch(this.dataset["checked"])
-          {
+        {
 						case "0":
 							//currently checked, set to unchecked
 							this.dataset["checked"] = 1;
@@ -22,8 +22,8 @@ window.onload = function(){
               this.checked = "checked";
               this.indeterminate = false;
 							break;
-					};
 				};
+			};
     };
 		document.onkeydown = function(e){
 			var pressedKeyValue = e.keyCode;
@@ -40,5 +40,5 @@ window.onload = function(){
 		document.forms.modal.onmousedown = function(e)
 		{
 			e.stopPropagation();
-		};
+		};	
 };

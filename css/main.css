@@ -2,7 +2,7 @@
 {
 	margin-left: 1rem;
 	text-indent: 1rem;
-	border-left: 0.25rem solid #C2185B;
+	border-left: 0.25rem solid #2196F3;
 }
 *, *:before, *:after
 {
@@ -60,7 +60,7 @@ h3, .tabLabel
   display: inline;
 }
 .tabs .tab .tabLabel{
-  background: #F8BBD0;
+  background: #BBDEFB;
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid #E91E63;
   display: inline-block;
@@ -94,7 +94,7 @@ h3, .tabLabel
   display: block;
   background: white;
   padding: 1em;
-  border-top: 1px solid #E91E63;
+  border-top: 1px solid #1976D2;
   float: left;
 	font-size: 1rem;
   margin-top: -1px;
@@ -194,7 +194,7 @@ form .student
 }
 form .student:nth-of-type(2n)
 {
-	background: #F8BBD0;
+	background: #BBDEFB;
 }
 form .student *
 {
@@ -240,7 +240,7 @@ label[for="property"]
 select
 {
 	font-family: 'Roboto Slab', serif;
-	background: #F8BBD0;
+	background: #BBDEFB;
 	font-size: 1em;
 	border: none;
 	color: #212121;
@@ -285,8 +285,8 @@ select
 .sinfo .spoints
 {
 	color: #212121;
-	border: 2px solid #C2185B;
-	background: #F8BBD0;
+	border: 2px solid #2196F3;
+	background: #BBDEFB;
 	display: block;
 	width: 95%;
 	height: auto;
@@ -302,8 +302,8 @@ select
 .sdelete button
 {
   color: #212121;
-	border: 2px solid #C2185B;
-	background: #F8BBD0;
+	border: 2px solid #2196F3;
+	background: #BBDEFB;
 	display: block;
 	width: 95%;
 	margin: 0 auto;
@@ -341,7 +341,7 @@ display: block;
   border-radius: 5px;
 	width: initial;
 	line-height: initial;
-  background: #E91E63;
+  background: #1976D2;
   padding: 2.5em 5em;
   box-shadow: 0.25em 0.25em 1em rgba(0,0,0,0.8);
 }

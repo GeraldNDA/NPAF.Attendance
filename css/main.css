@@ -8,6 +8,10 @@
 {
   box-sizing: border-box;
 }
+a
+{
+text-decoration: none;
+}
 body
 {
   background: #ccc;
@@ -62,7 +66,7 @@ h3, .tabLabel
 .tabs .tab .tabLabel{
   background: #BBDEFB;
 	border-top: 1px solid transparent;
-	border-bottom: 1px solid #E91E63;
+	border-bottom: 1px solid #1976D2;
   display: inline-block;
 	font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;

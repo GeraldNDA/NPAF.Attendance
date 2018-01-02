@@ -1,6 +1,6 @@
 window.onload = function() {
   if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
+    navigator.serviceWorker.register('service-worker.js')
       .then((registration) => {
         console.log(registration.taskScheduler);
       }).catch((err) => {

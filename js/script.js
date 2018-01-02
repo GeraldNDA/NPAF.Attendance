@@ -1,4 +1,13 @@
-window.onload = function(){
+window.onload = function() {
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log(registration.taskScheduler);
+      }).catch((err) => {
+        console.error(err);
+      });
+  }
+  
   var attendance = document.forms.attendance;
   for(var i = 0; i < attendance.length; i++)
     {

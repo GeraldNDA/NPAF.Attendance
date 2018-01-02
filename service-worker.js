@@ -5,17 +5,3 @@ this.ontask = function(task) {
   // display a notification, etc.
 }
 
-// https://example.com/webapp.js
-function onTaskAdded(task) {
-  console.log("Task successfully scheduled.");
-}
-
-function onError(error) {
-  alert("Sorry, couldn't set the alarm: " + error);
-}
-
-navigator.serviceWorker.ready.then(function(serviceWorkerRegistration) {
-  serviceWorkerRegistration.taskScheduler.add(Date.now() + (10 * 60000), {
-    message: "It's been 10 minutes, your soup is ready!"
-  }).then(onTaskAdded, onError);
-});

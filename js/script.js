@@ -1,11 +1,26 @@
 window.onload = function() {
   if('serviceWorker' in navigator) {
+    function onTaskAdded(task) {
+        console.log("Task successfully scheduled.");
+    }
+
+    function onError(error) {
+        alert("Sorry, couldn't set the alarm: " + error);
+    }
+    
     navigator.serviceWorker.register('service-worker.js')
       .then((registration) => {
         console.log(registration.taskScheduler);
       }).catch((err) => {
         console.error(err);
       });
+      navigator.serviceWorker.ready.then((reg) => {
+        console.log(reg);
+        console.log(reg.taskScheduler);
+        reg.taskScheduler.add(Date.now() + (10 * 60000), {
+            message: "It's been 10 minutes, your soup is ready!"
+        }).then(onTaskAdded, onError);
+      })
   }
   
   var attendance = document.forms.attendance;
